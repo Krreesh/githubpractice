@@ -6,5 +6,8 @@ jobs:
     steps:
       - run: echo "hello"
         name: Greet
+      - run: |
+          echo "running step 1"
+          echo "running step 2"
       - name: bye
         run: echo "bye"  
