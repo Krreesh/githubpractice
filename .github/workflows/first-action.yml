@@ -1,0 +1,10 @@
+name: First workflow
+on: workflow_dispatch
+jobs:
+  first-run:
+    runs-on: ubuntu-slim
+    steps:
+      - run: echo "hello"
+        name: Greet
+      - name: bye
+        run: echo "bye"  
